@@ -6,7 +6,7 @@ The Offline AI SDK Engine is a powerful solution for developing AI applications 
 ## Features
 - **Local Processing:** Perform AI computations locally on devices without reliance on cloud services.
 - **Model Support:** Compatible with various machine learning and deep learning models.
-- **Cross-Platform:** Supports multiple platforms including Windows, macOS, and Linux.
+- **Cross-Platform:** Supports multiple platforms including Windows, macOS, Linux, and Android (via [Termux](https://termux.dev/)).
 - **Easy Integration:** Simple APIs to integrate AI functionalities into existing applications.
 
 ## Getting Started
@@ -16,6 +16,20 @@ To install the Offline AI SDK, follow these steps:
 1. Download the SDK from the [official repository](https://github.com/badgoysclub-1984/Metatron-AI-SDK).
 2. Unzip the package and navigate to the SDK directory.
 3. Include the SDK in your project using the appropriate method for your development environment.
+
+### Installation on Android (Termux)
+To use the SDK on Android, install [Termux](https://termux.dev/) — a free and open-source terminal emulator for Android:
+
+1. Install Termux from [F-Droid](https://f-droid.org/packages/com.termux/) (recommended) or the [GitHub releases page](https://github.com/termux/termux-app/releases).
+2. Open Termux and run the following commands to set up Python and the SDK:
+   ```bash
+   pkg update && pkg upgrade
+   pkg install python
+   pip install metatron-ai-sdk
+   ```
+3. You can now use the SDK as described in the Basic Usage section below.
+
+> **Note:** For best performance, a device with sufficient RAM (4 GB+) is recommended when running AI models locally.
 
 ### Basic Usage
 Here is an example of how to get started with the SDK:
